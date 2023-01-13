@@ -8,6 +8,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var orderDetailRouter = require("./routes/orderDetails");
 var addProduct = require("./routes/AddProduct");
+// var cors = require("cors");
 var app = express();
 
 // view engine setup
