@@ -16,6 +16,7 @@ const {
 } = require("../config/auth");
 const keysecret =
   "my password secret is order management project my batch number is b35we";
+mongoose.set("strictQuery", false);
 /* GET users listing. */
 mongoose.connect(dbUrl);
 router.get("/verify", validate, roleOwners, async (req, res) => {
