@@ -98,7 +98,7 @@ router.post("/sendpasswordlink", async (req, res) => {
       // );
       const sendLink = await nodemailerService(
         userfind.email,
-        `http://raja-ordermanagement.netlify.app/users/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
+        `https://raja-ordermanagement.netlify.app/users/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
       );
       res.send({
         statusCode: 200,
