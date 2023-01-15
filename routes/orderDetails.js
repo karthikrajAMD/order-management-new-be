@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 const { default: mongoose } = require("mongoose");
 const { mongodb, dbName, dbUrl } = require("../config/dbConfig");
-const { orderDetail } = require("../schema/OrderedDetails");
+const { orderDetail } = require("../Schema/OrderedDetails");
 mongoose.set("strictQuery", false);
 mongoose.connect(dbUrl);
 router.get("/details", async (req, res) => {
