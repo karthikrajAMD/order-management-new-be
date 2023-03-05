@@ -323,4 +323,3 @@ router.post("/:id/:token", async (req, res) => {
 });
 
 module.exports = router;
->>>>>>> 4fd8d8e3c90ff62e67c5429aaced2341d19bd824
