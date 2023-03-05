@@ -3,11 +3,6 @@ var router = express.Router();
 const { default: mongoose } = require("mongoose");
 const { mongodb, dbName, dbUrl } = require("../config/dbConfig");
 const { userModel } = require("../Schema/UserSchema");
-<<<<<<< HEAD
-
-=======
-const { sendMail } = require("../config/mailService");
->>>>>>> 5f0dfc73a571db4c020b19ab25358936f334f4bc
 const { nodemailerService } = require("../config/nodemailerService");
 const jwt = require("jsonwebtoken");
 const {
