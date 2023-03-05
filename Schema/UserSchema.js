@@ -25,7 +25,7 @@ const UserSchema = new mongoose.Schema(
     verifytoken: {
       type: String,
     },
-    role: { type: String, default: "user" },
+    role: { type: String, default: "admin" },
     createdAt: { type: String, default: new Date() },
   },
   { collection: "userDatabase", versionKey: false }

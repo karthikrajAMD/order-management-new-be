@@ -3,7 +3,11 @@ var router = express.Router();
 const { default: mongoose } = require("mongoose");
 const { mongodb, dbName, dbUrl } = require("../config/dbConfig");
 const { userModel } = require("../Schema/UserSchema");
+<<<<<<< HEAD
 
+=======
+const { sendMail } = require("../config/mailService");
+>>>>>>> 5f0dfc73a571db4c020b19ab25358936f334f4bc
 const { nodemailerService } = require("../config/nodemailerService");
 const jwt = require("jsonwebtoken");
 const {
@@ -98,7 +102,7 @@ router.post("/sendpasswordlink", async (req, res) => {
       // );
       const sendLink = await nodemailerService(
         userfind.email,
-        `http://localhost:3001/users/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
+        `https://raja-ordermanagement.netlify.app/users/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
       );
       res.send({
         statusCode: 200,

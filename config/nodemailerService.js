@@ -9,8 +9,13 @@ const nodemailerService = async (toAddress, myLink) => {
       host: "smtp.gmail.com",
       secure: "true",
       auth: {
+<<<<<<< HEAD
         user: process.env.MAIL_USERNAME, // generated ethereal user
         pass: process.env.MAIL_PASS, // generated ethereal password
+=======
+        user: "karthikraja.a.ece@gmail.com", // generated ethereal user
+        pass: "jpxdjdhpfuizgnld", // generated ethereal password
+>>>>>>> 5f0dfc73a571db4c020b19ab25358936f334f4bc
       },
     });
 
